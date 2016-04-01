@@ -45,3 +45,27 @@ group :development do
   gem 'spring'
 end
 
+
+gem 'foundation-rails', '~> 5.5'
+gem 'gibbon'
+gem 'high_voltage'
+gem 'sendgrid'
+gem 'simple_form'
+gem 'therubyracer', :platform=>:ruby
+
+group :development do
+  gem 'better_errors'
+  gem 'quiet_assets'
+  gem 'rails_apps_pages'
+  gem 'rails_layout'
+end
+
+group :development, :test do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
